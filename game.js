@@ -492,6 +492,8 @@ var Livello1 =
     // SEGNA ARMA
         segnaArma = game.add.sprite(110, 70, 'arma');
         segnaArma.fixedToCamera = true;
+        segnaArma.height = 26;
+        segnaArma.width = 26;
         segnaArma.visible = false;
 
     // CONTACHIAVI CHIAVEOMBRA
