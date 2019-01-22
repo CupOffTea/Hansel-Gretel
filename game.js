@@ -1029,7 +1029,7 @@ var Livello2 =
     // HITBOX FUOCO
         hitBoxFuoco = game.add.sprite(1408, 4650, 'hitBoxFuoco');
         game.physics.arcade.enable(hitBoxFuoco);
-        hitBoxFuoco.visible = false;
+        hitBoxFuoco.alpha = 0;
 
     // PEZZI MEDAGLIONE
         gemma1 = game.add.sprite(830, 7500, 'gemma1');
@@ -2344,11 +2344,15 @@ function stopFinaleN()
 
 function stopFinaleP()
 {
+  fromZero1();
+  fromZero2();
   game.state.start('Introduzione');
 }
 
 function stopFinaleI()
 {
+  fromZero1();
+  fromZero2();
   game.state.start('Introduzione');
 }
 
